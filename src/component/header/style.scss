@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+	background-color: #eee;
+	&__logo {
+		width: 200px;
+		padding: 10px 20px;
+		margin: 10px;
+		background-color: $baseGray;
+		border-radius: 5px;
+	}
+}

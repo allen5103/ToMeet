@@ -1,0 +1,34 @@
+@import '../../variables.scss';
+
+.home__container {
+	&__mainVisual {
+		background-color: $baseBlue;
+		height: 500px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	&__services {
+		&__service {
+			width: 400px;
+			height: 180px;
+			background-color: $baseBlue;
+			border-radius: 10px;
+			margin: 20px;
+		}
+	}
+	&__contact {
+		padding-top: 20px;
+		&__list {
+			background-color: $baseBlue;
+			width: 50%;
+			height: 250px;
+			border-radius: 10px;
+		}
+		&__other {
+			width: 40%;
+		}
+	}
+}

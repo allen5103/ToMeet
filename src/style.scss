@@ -1,0 +1,51 @@
+@import './variables.scss';
+* {
+	font-family: '微軟正黑體';
+	box-sizing: border-box;
+	font-size: 14px;
+}
+a {
+	text-decoration: none;
+}
+
+#main {
+	width: 1366px;
+	margin: 0 auto 40px;
+}
+
+.btn {
+	padding: 5px 10px;
+	margin: 5px 10px;
+	border-radius: 5px;
+	background-color: $baseGray;
+}
+
+.title {
+	padding: 10px 0;
+	font-size: 24px;
+	font-weight: 600;
+}
+.title {
+	padding: 5px 0;
+	font-size: 16px;
+}
+
+.flex {
+	display: flex;
+	&.col {
+		flex-direction: column;
+	}
+	&.xCenter {
+		justify-content: center;
+	}
+	&.yCenter {
+		align-items: center;
+	}
+	&.allCenter {
+		justify-content: center;
+		align-items: center;
+	}
+	&.wrap {
+		flex-wrap: wrap;
+	}
+}
