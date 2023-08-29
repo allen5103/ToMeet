@@ -1,6 +1,6 @@
 // AppRouter.jsx
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Layout from './Layout.jsx';
 import useAppInfo from './useAppInfo.js';
 // 引入您的不同頁面組件
