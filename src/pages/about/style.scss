@@ -1,0 +1,52 @@
+@import '../../variables.scss';
+.about__container {
+	padding: 0 64px;
+	h1 {
+		text-align: right;
+		padding: 10px;
+		margin-bottom: 100px;
+	}
+
+	h2,
+	h3,
+	p {
+		text-align: left;
+	}
+
+	p {
+		font-size: 16px;
+	}
+	&__intro {
+		width: 760px;
+		margin-bottom: 60px;
+		h2 {
+			margin-bottom: 80px;
+		}
+		h3,
+		p {
+			margin-bottom: 40px;
+		}
+	}
+	&__services {
+		width: 760px;
+		margin-bottom: 100px;
+		h2 {
+			margin-bottom: 10px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	&__clients {
+		width: 100%;
+		&__list {
+			justify-content: space-between;
+			&__client {
+				background-color: $baseBlue;
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+			}
+		}
+	}
+}

@@ -1,9 +1,5 @@
 @import '../../variables.scss';
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 10px;
 	background-color: #eee;
 	&__logo {
 		width: 200px;
@@ -11,5 +7,13 @@
 		margin: 10px;
 		background-color: $baseGray;
 		border-radius: 5px;
+	}
+	& > div {
+		padding: 0 40px 0 20px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 1366px;
 	}
 }

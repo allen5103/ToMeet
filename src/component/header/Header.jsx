@@ -8,15 +8,17 @@ import './style.scss';
 const Header = ({ routeMap }) => {
 	return (
 		<nav className="header">
-			<Link className="header__logo" to="/">
-				Logo
-			</Link>
-			<div className="header__linkContent">
-				{routeMap?.map(r => (
-					<Link key={r.name} className="header__linkContent__link btn" to={r.path}>
-						{r.name}
-					</Link>
-				))}
+			<div>
+				<Link className="header__logo" to="/">
+					Logo
+				</Link>
+				<div className="header__linkContent">
+					{routeMap?.map(r => (
+						<Link key={r.name} className="header__linkContent__link btn" to={r.path}>
+							{r.name}
+						</Link>
+					))}
+				</div>
 			</div>
 		</nav>
 	);
