@@ -15,5 +15,8 @@
 		justify-content: space-between;
 		align-items: center;
 		width: 1366px;
+		@media (max-width: 1366px) {
+			width: 100%;
+		}
 	}
 }
