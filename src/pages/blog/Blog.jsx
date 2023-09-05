@@ -21,7 +21,7 @@ const Blog = props => {
 			category: '分類2',
 			imgUrl: '',
 			textObj: {
-				title: '文章標題一',
+				title: '文章標題二',
 				content: '內文2的內文內文2的內文內，文2的內文內文2的內文，內文2的內文。',
 				aurther: '作者2',
 				date: '2023/8/30',
@@ -31,12 +31,13 @@ const Blog = props => {
 	return (
 		<div className="blog__container">
 			<Carousel
+				arrows={true}
 				style={{ width: '90%', border: '1px solid black', margin: '0 auto' }}
 				className="blog__container__carousel"
 				afterChange={e => console.log(e)}
 			>
-				{items.map(item => (
-					<CarouselItem className="blog__container__carousel__item" {...item} />
+				{items.map((item, index) => (
+					<CarouselItem key={`${item.textObj.title}_${index}`} className="blog__container__carousel__item" {...item} />
 				))}
 			</Carousel>
 		</div>

@@ -6,7 +6,7 @@ import './style.scss';
 const CarouselItem = ({ className, category, imgUrl, textObj }) => {
 	return (
 		<div className={`carouselItem ${className}`} style={{ background: 'pink' }}>
-			CarouselItem
+			{textObj.title}
 		</div>
 	);
 };
@@ -26,7 +26,7 @@ CarouselItem.propTypes = {
 	className: PropTypes.string,
 	category: PropTypes.string,
 	imgUrl: PropTypes.string,
-	textObj: PropTypes.objectOf({
+	textObj: PropTypes.shape({
 		title: PropTypes.string,
 		content: PropTypes.string,
 		aurther: PropTypes.string,
